@@ -10,34 +10,34 @@ function getRandomValue(pos, variance) {
 }
 //help from Jim on what i needed to have random colors
 const colors = [
-  color(255, 0, 0),   // Red
+  color(255, 0, 0), // Red
   color(255, 165, 0), // Orange
   color(255, 255, 0), // Yellow
-  color(0, 255, 0),   // Green
-  color(0, 0, 255),   // Blue
-  color(75, 0, 130),  // Indigo
-  color(238, 130, 238) // Violet (Purple)
+  color(0, 255, 0), // Green
+  color(0, 0, 255), // Blue
+  color(75, 0, 130), // Indigo
+  color(238, 130, 238), // Violet (Purple)
 ];
 
 function drawLayers(x, y, size, layers) {
   const variance = size / 2.6;
   noFill();
-  
+
   //got help from Chat to get how to use the vertex to get "all over the place lines" and not squares
-  beginShape();  // Start drawing the continuous line
+  beginShape(); // Start drawing the continuous line
   for (let i = 0; i < layers; i++) {
     if (Math.random() > 1.0) {
       continue;
     }
-   
-   let randomColor = random(colors);
-   stroke(randomColor);
+
+    let randomColor = random(colors);
+    stroke(randomColor);
     const x1 = getRandomValue(x, variance);
     const y1 = getRandomValue(y, variance);
 
-    vertex(x1, y1); 
+    vertex(x1, y1);
   }
-  endShape();  
+  endShape();
 }
 
 function draw() {
@@ -51,4 +51,3 @@ function draw() {
 
   noLoop();
 }
-
