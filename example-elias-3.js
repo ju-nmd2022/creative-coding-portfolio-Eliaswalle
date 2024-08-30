@@ -35,7 +35,8 @@ function drawLayers(x, y, size, layers) {
     const x1 = getRandomValue(x, variance);
     const y1 = getRandomValue(y, variance);
 
-    vertex(x1, y1); 
+    vertex(x1, y1);
+    rect(x1,y1,10); 
   }
   endShape();  
 }
@@ -51,4 +52,3 @@ function draw() {
 
   noLoop();
 }
-

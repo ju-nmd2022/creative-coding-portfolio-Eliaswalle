@@ -8,16 +8,6 @@ const layers = 30;
 function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
 }
-//help from Jim to get random colors
-const colors = [
-  color(255, 0, 0),   // Red
-  color(255, 165, 0), // Orange
-  color(255, 255, 0), // Yellow
-  color(0, 255, 0),   // Green
-  color(0, 0, 255),   // Blue
-  color(75, 0, 130),  // Indigo
-  color(238, 130, 238) // Violet (Purple)
-];
 
 function drawLayers(x, y, size, layers) {
   const variance = size / 2.6;
@@ -29,8 +19,6 @@ function drawLayers(x, y, size, layers) {
     if (Math.random() > 1.0) {
       continue;
     }
-   let randomColor = random(colors);
-   stroke(randomColor);
     const x1 = getRandomValue(x, variance);
     const y1 = getRandomValue(y, variance);
 
@@ -40,7 +28,7 @@ function drawLayers(x, y, size, layers) {
 }
 
 function draw() {
-  background(0, 0, 0);
+  background(255, 255, 255);
 
   for (let y = 0; y < 10; y++) {
     for (let x = 0; x < 10; x++) {
@@ -50,3 +38,4 @@ function draw() {
 
   noLoop();
 }
+
