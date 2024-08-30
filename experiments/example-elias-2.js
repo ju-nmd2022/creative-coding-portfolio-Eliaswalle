@@ -9,7 +9,7 @@ function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
 }
 //help from Jim on what i needed to have random colors
-const colors = [
+const färg = [
   color(255, 0, 0), // Red
   color(255, 165, 0), // Orange
   color(255, 255, 0), // Yellow
@@ -30,7 +30,7 @@ function drawLayers(x, y, size, layers) {
       continue;
     }
 
-    let randomColor = random(colors);
+    let randomColor = random(färg);
     stroke(randomColor);
     const x1 = getRandomValue(x, variance);
     const y1 = getRandomValue(y, variance);
