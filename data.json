@@ -13,5 +13,10 @@
     "file": "experiments/example-elias-2.js",
     "name": "Recreation artwork-example-3",
     "description": "Week number one assignment,recreation of a art from the slides"
+  },
+  {
+    "file": "experiments/example-elias-4.js",
+    "name": "Recreation artwork-example-4",
+    "description": "Week number two assignment,recreation of a art from the slides.Using more complex code"
   }
 ]
