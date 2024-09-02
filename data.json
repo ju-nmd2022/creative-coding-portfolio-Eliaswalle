@@ -1,10 +1,5 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Garrits example",
-    "description": "Garrits example"
-  },
-  {
     "file": "experiments/example-elias.js",
     "name": "Recreation artwork-example",
     "description": "Week number one assignment,recreation of a art from the slides"
