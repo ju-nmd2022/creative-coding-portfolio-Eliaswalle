@@ -20,7 +20,7 @@ function getRandomValue(pos, variance) {
 }
 
 function drawLayers(x, y, size, layers) {
-  const variance = size / 2.6;
+  const variance = size / 2.9;
   noFill();
 
   //got help from Chat to get how to use the vertex to get "all over the place lines" and not squares
