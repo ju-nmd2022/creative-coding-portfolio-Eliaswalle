@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(600, 600);
   färg = [
     color(255, 0, 0), // Red
     color(255, 165, 0), // Orange

@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(1000, 1000);
+    createCanvas(600, 600);
       //help from Jim on what i needed to have random colors
   färg = [
     color(255, 0, 0), // Red
