@@ -1,5 +1,5 @@
 let particles = [];
-let maxParticles = 1000;  // Set the maximum number of particles before resetting
+let maxParticles = 700;  // Set the maximum number of particles before resetting
 let färg;  // Color array
 let lastParticleTime = 0;  // Track the last time particles were generated
 let particleInterval = 10;  // Interval (in frames) between particle generation
@@ -20,14 +20,14 @@ function setup() {
 }
 
 const size = 100;
-const layers = 2;
+const layers = 1;
 
 function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
 }
 
 function drawLayers(x, y, size, layers) {
-  const variance = size / 3.9;
+  const variance = size / 2.9;
   noFill();
  
   beginShape(); 
@@ -103,8 +103,8 @@ function draw() {
   // Remove dead particles
   particles = particles.filter((p) => !p.isDead());
 
-  // Check if the number of particles exceeds the maximum
-  if (particles.length >= maxParticles) {
-    particles = [];  // Reset the particles array
+  // Ensure that the number of particles does not exceed the maximum
+  if (particles.length > maxParticles) {
+    particles = particles.slice(0, maxParticles);  // Trim the array to maxParticles
   }
 }

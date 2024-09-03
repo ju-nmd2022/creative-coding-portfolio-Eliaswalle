@@ -1,19 +1,10 @@
 let particles = [];
-let maxParticles = 1000;  // Set the maximum number of particles before resetting
+let maxParticles = 100; // Set the maximum number of particles before resetting
 
 function setup() {
   createCanvas(600, 600);
   blendMode(ADD);
   frameRate(20);
-  färg = [
-    color(255, 0, 0), // Red
-    color(255, 165, 0), // Orange
-    color(255, 255, 0), // Yellow
-    color(0, 255, 0), // Green
-    color(0, 0, 255), // Blue
-    color(75, 0, 130), // Indigo
-    color(238, 130, 238), // Violet (Purple)
-  ];
 }
 let färg;
 const size = 100;
@@ -26,8 +17,8 @@ function getRandomValue(pos, variance) {
 function drawLayers(x, y, size, layers) {
   const variance = size / 2.4;
   noFill();
- 
-  beginShape(); 
+
+  beginShape();
   for (let i = 0; i < layers; i++) {
     const x1 = getRandomValue(x, variance);
     const y1 = getRandomValue(y, variance);
@@ -49,20 +40,20 @@ class Particle {
     const a = Math.random() * Math.PI * 1;
     const v = 1.1 + Math.random();
     this.velocity = createVector(Math.cos(a) * v, Math.sin(a) * v);
-    this.lifespan = 120;  // 20 seconds lifespan at 60 FPS
+    this.lifespan = 120; // 20 seconds lifespan at 60 FPS
   }
 
   update() {
     this.velocity.mult(0.99);
     this.position.add(this.velocity);
-    this.lifespan--;  // Decrease the lifespan each frame
+    this.lifespan--; // Decrease the lifespan each frame
   }
 
   draw() {
     push();
     translate(this.position.x, this.position.y);
     noStroke();
-    fill(200, 0, 0, map(this.lifespan, 0, 120, 0, 255));  // Adjusted the map range to 0-120
+    fill(200, 0, 0, map(this.lifespan, 0, 120, 0, 255)); // Adjusted the map range to 0-120
     rect(0, 0, 1);
     pop();
   }
@@ -75,7 +66,6 @@ class Particle {
 function draw() {
   background(0, 0, 0);
 
-
   // Generate and draw particles in a grid pattern
   for (let y = 0; y < 10; y++) {
     for (let x = 0; x < 10; x++) {
@@ -87,7 +77,6 @@ function draw() {
   for (let particle of particles) {
     particle.update();
     particle.draw();
-    
   }
 
   // Remove dead particles
@@ -95,6 +84,6 @@ function draw() {
 
   // Check if the number of particles exceeds the maximum
   if (particles.length >= maxParticles) {
-    particles = [];  // Reset the particles array
+    particles = []; // Reset the particles array
   }
 }
