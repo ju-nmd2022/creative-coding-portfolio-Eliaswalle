@@ -15,7 +15,7 @@ function getRandomValue(pos, variance) {
 function drawLayers(x, y, size, layers) {
   const variance = size / 2.9;
   noFill();
-
+ 
   beginShape(); 
   for (let i = 0; i < layers; i++) {
     const x1 = getRandomValue(x, variance);
