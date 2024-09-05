@@ -86,17 +86,16 @@ class Agent {
     }
   }
 
-
   // The draw method draws the agent's path as a line from the last position to the current position.
   draw() {
     push(); // Save the current drawing style settings.
     stroke(0, 0, 0, 40); // Set the stroke color to black with some transparency.
-    strokeWeight(random (0,2)); // Set the stroke weight to 1 pixel.
+    strokeWeight(random(0, 2)); // Set the stroke weight to 1 pixel.
     line(
       // Draw a line from the last position to the current position.
       this.lastPosition.x,
       this.lastPosition.y,
-      this.position.x ,
+      this.position.x,
       this.position.x
     );
     pop(); // Restore the previous drawing style settings.
@@ -155,7 +154,6 @@ function draw() {
   fill(0);
   rectMode(CENTER); // Ensure the rectangle is drawn from the center
   rect(squareCenterX, squareCenterY, squareSize, squareSize);
-
 
   // Loop through agents
   for (let agent of agents) {

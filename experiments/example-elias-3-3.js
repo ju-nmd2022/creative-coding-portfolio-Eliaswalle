@@ -119,6 +119,7 @@ function generateField() {
     field.push([]); // Add a new row to the field.
     for (let y = 0; y < maxRows; y++) {
       // Loop through rows of the grid.
+    
       const value = noise(x / divider, y / divider) * Math.PI * 2; // Generate an angle from Perlin noise.
       field[x].push(p5.Vector.fromAngle(value)); // Create a vector from the angle and add it to the grid.
     }
