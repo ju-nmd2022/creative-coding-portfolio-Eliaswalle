@@ -1,4 +1,4 @@
-squareSize = 200;
+squareSize = 100;
 squareCenterY = innerHeight / 2;
 squareCenterX = innerWidth / 2;
 
@@ -150,10 +150,12 @@ let field; // Variable to hold the flow field.
 let agents = []; // Array to hold all the agents.
 
 function draw() {
+
   // Draw the square once per frame
   fill(0);
   rectMode(CENTER); // Ensure the rectangle is drawn from the center
   rect(squareCenterX, squareCenterY, squareSize, squareSize);
+  
 
   // Loop through agents
   for (let agent of agents) {
