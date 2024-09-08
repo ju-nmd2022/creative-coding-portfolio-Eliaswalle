@@ -1,37 +1,47 @@
 [
   {
     "file": "experiments/example-elias-2-1.js",
-    "name": "Recreation artwork-example",
+    "name": "Recreation artwork-example-2-1",
     "description": "Week number one assignment,recreation of a art from the slides"
   },
   {
     "file": "experiments/example-elias-2-3.js",
-    "name": "Recreation artwork-example-2",
+    "name": "Recreation artwork-example-2-3",
     "description": "Week number one assignment,recreation of a art from the slides"
   },
   {
     "file": "experiments/example-elias-2-2.js",
-    "name": "Recreation artwork-example-2-3",
+    "name": "Recreation artwork-example-2-2",
     "description": "Week number one assignment,recreation of a art from the slides"
   },
   {
     "file": "experiments/example-elias-3-1.js",
-    "name": "Recreation artwork-example-4",
+    "name": "Recreation artwork-example-3-1",
     "description": "Week number two assignment,recreation of a art from the slides.Using more complex code"
   },
   {
     "file": "experiments/example-elias-1-1.js",
-    "name": "Recreation artwork-example-2",
+    "name": "Recreation artwork-example-1-1",
     "description": "Week number one assignment,recreation of a art from the slides"
   },
   {
     "file": "experiments/example-elias-1-2.js",
-    "name": "Recreation artwork-example-2-3",
+    "name": "Recreation artwork-example-1-2",
     "description": "Week number one assignment,recreation of a art from the slides"
   },
   {
     "file": "experiments/example-elias-1-3.js",
-    "name": "Recreation artwork-example-4",
+    "name": "Recreation artwork-example-1-3",
+    "description": "Week number one assignment,recreation of a art from the slides.Using more complex code"
+  },
+  {
+    "file": "experiments/example-elias-3-2.js",
+    "name": "Recreation artwork-example-3-2",
+    "description": "Week number two assignment,recreation of a art from the slides"
+  },
+  {
+    "file": "experiments/example-elias-3-3.js",
+    "name": "Recreation artwork-example-3-3",
     "description": "Week number two assignment,recreation of a art from the slides.Using more complex code"
   }
 ]

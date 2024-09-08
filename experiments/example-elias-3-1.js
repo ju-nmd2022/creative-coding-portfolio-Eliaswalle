@@ -65,7 +65,7 @@ class Agent {
       // Draw a line from the last position to the current position.
       this.lastPosition.x,
       this.lastPosition.y,
-      this.position.y,
+      this.position.x,
       this.position.x * 2
     );
     pop(); // Restore the previous drawing style settings.
