@@ -2,8 +2,8 @@ let squareSize = 100; // Size of the square (100x100 pixels)
 let squareCenterY; // Variable to store the Y-coordinate of the square's center
 let squareCenterX; // Variable to store the X-coordinate of the square's center
 
-let numAgents = 50; // Number of agents, reduced to improve performance
-let soundCooldown = 10; // Cooldown for sound, so it doesn't trigger too frequently
+let numAgents = 20; // Number of agents, reduced to improve performance
+let soundCooldown = 5; // Cooldown for sound, so it doesn't trigger too frequently
 
 // The Agent class represents an object that can move, follow a direction, and interact with borders.
 class Agent {
