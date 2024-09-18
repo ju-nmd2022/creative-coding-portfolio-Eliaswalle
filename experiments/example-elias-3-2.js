@@ -51,7 +51,7 @@ class Agent {
   draw() {
     push(); // Save the current drawing style (color, stroke, etc.).
     stroke(this.color); // Set the stroke color to the agent's color.
-    strokeWeight(random(5)); // Set the stroke weight (thickness) to a random value.
+    strokeWeight(5); // Set the stroke weight (thickness) to a random value.
     line(
       this.lastPosition.x,
       this.lastPosition.y,
@@ -81,13 +81,13 @@ function generateAgents() {
       x = Math.random() * innerWidth; // Generate a random x position within the canvas width.
       y = Math.random() * innerHeight; // Generate a random y position within the canvas height.
     } while (
-      x > squareCenterX - halfSize &&
-      x < squareCenterX + halfSize && // Ensure the x position is outside the square.
-      y > squareCenterY - halfSize &&
-      y < squareCenterY + halfSize // Ensure the y position is outside the square.
+      x > squareCenterX * halfSize &&
+      x < squareCenterX * halfSize && // Ensure the x position is outside the square.
+      y > squareCenterY * halfSize &&
+      y < squareCenterY * halfSize // Ensure the y position is outside the square.
     );
 
-    let agent = new Agent(x, y, 4, 0.1); // Create a new agent at the random position with a max speed of 4 and max force of 0.1.
+    let agent = new Agent(x, y, 5, 1.5); // Create a new agent at the random position with a max speed of 4 and max force of 0.1.
     agents.push(agent); // Add the newly created agent to the array of agents.
   }
 }
