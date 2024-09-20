@@ -101,7 +101,7 @@ class Agent {
   // Method to draw the agent
   draw() {
     push(); // Save the current drawing state
-    stroke(0, 0, 0, 40); // Set a faint black color for the trail
+    stroke(0, 0, 0, 400); // Set a faint black color for the trail
     strokeWeight(2); // Set the thickness of the trail
     line(
       this.lastPosition.x,
@@ -173,10 +173,8 @@ function playCollisionSound() {
       Tone.context.resume(); // Resume audio context to enable sound
     }
 
-    const synth = new Tone.Synth().toDestination(); // Create a new synthesizer
-    const randomNote = ["C4", "E4", "G4", "A4", "B4"][ // Select a random note from this array
-      Math.floor(Math.random() * 5)
-    ];
+    const synth = new Tone.FMSynth().toDestination(); // Create a new synthesizer
+    const randomNote = ["E1", "G2", "A1", "B2"][Math.floor(Math.random() * 4)]; // Select a random note from this array
     synth.triggerAttackRelease(randomNote, "8n"); // Play the selected note for a short duration
 
     soundCooldownCounter = soundCooldown; // Reset the cooldown timer
