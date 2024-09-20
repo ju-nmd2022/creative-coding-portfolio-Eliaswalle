@@ -135,9 +135,12 @@ class Agent {
       case 2:
         let halfSize = this.size / 2;
         triangle(
-          this.position.x, this.position.y - halfSize, // Top vertex
-          this.position.x - halfSize, this.position.y + halfSize, // Bottom-left vertex
-          this.position.x + halfSize, this.position.y + halfSize // Bottom-right vertex
+          this.position.x,
+          this.position.y - halfSize, // Top vertex
+          this.position.x - halfSize,
+          this.position.y + halfSize, // Bottom-left vertex
+          this.position.x + halfSize,
+          this.position.y + halfSize // Bottom-right vertex
         ); // Draw a triangle
         break;
       default:
