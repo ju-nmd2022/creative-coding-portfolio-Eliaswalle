@@ -1,3 +1,4 @@
+// NOT FINISHED WORKING PROGRESS
 let squareSize = 100; // Size of the square (100x100 pixels)
 let squareCenterY; // Y-coordinate of the square's center
 let squareCenterX; // X-coordinate of the square's center
